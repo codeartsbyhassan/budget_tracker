@@ -11,8 +11,12 @@ use App\Http\Controllers\ExpenseController;
 //     return view('expenses.index');
 // });
 
-Route::get('/', function() {
-    return redirect()->route('expenses.index');
+//Route::get('/', function() {
+//    return redirect()->route('expenses.index');
+//});
+
+Route::get('/',function(){
+    return view('expenses.index');
 });
 
 Route::resource('expenses', ExpenseController::class);

@@ -19,4 +19,5 @@ Route::get('/',function(){
     return view('expenses.index');
 });
 
-Route::resource('expenses', ExpenseController::class);
+Route::resource('expenses', ExpenseController::class); 
+  
